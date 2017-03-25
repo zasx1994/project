@@ -12,17 +12,24 @@
     <!-- ... -->  
     <welcome-file-list>  
         <!-- must can't start with '/' -->  
-       <welcome-file>hello.jsp</welcome-file>  
+       <welcome-file>index.html</welcome-file>  
     </welcome-file-list>   
 
     <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>mypackage.Hello</servlet-class>
+        <servlet-name>service</servlet-name>
+        <servlet-class>mypackage.IndexServelt</servlet-class>
     </servlet>
-
+     <servlet>
+        <servlet-name>service2</servlet-name>
+        <servlet-class>mypackage.IndexServelt</servlet-class>
+    </servlet>
     <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/he</url-pattern>
+        <servlet-name>service2</servlet-name>
+        <url-pattern>/service2</url-pattern>
+            <servlet-name>service</servlet-name>
+        <url-pattern>/service</url-pattern>
     </servlet-mapping>
+
+
 
 </web-app>
